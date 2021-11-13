@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 6px;
+}
+body {
+  font-family: 'Courgette', cursive;
+  background: burlywood;
+  margin: 0;
+  height: 100vh;
+  text-align: center;  
+}
+.solid-border {
+  border: 8px solid rgb(250, 163, 1);
+  background:cornsilk;
+  margin: 10px;
+  padding: 10px;
+}
+.iframe-container{
+    position: center;
+    width: 80%;
+    padding-bottom: 45%; 
+    height: 100%;
+  }
+  .iframe-container iframe{
+    position: center;
+    top:0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    
+  }

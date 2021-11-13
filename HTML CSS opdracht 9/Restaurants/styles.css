@@ -1,0 +1,98 @@
+body {
+    font-family: 'Courgette', cursive;
+    margin: 0;
+    height: 100vh;
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr ;
+    grid-template-areas: 
+        "header header header"
+        "italiaans main nederlands"
+        "chinees main all-in"    
+        "chinees main all-in"       
+        "footer footer reclame";
+    height: 100vh;
+    margin: 2em;
+    grid-gap: 0.2rem;    
+}
+header {
+    grid-area: header;
+    background: url("panorama-van-verse-groenten-en-vruchten-op-vage-achtergrond-108910554.jpg") no-repeat;
+    background-size:cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+} 
+main {
+    grid-area: main;    
+    background: url("./groenten_fruit_gezondheid.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: cyan;    
+}
+.italiaans {
+    grid-area: italiaans;    
+    background: url("./pizza.jpg");
+    background-position: center;          
+    text-align: center;
+    color:cyan;
+
+}  
+
+.nederlands {
+    grid-area: nederlands;
+    background: url(./Herbivoor.jpg);
+    background-position: center;
+    text-align: center;
+    color: cyan;
+        
+}
+
+.all-in {
+    grid-area: all-in;    
+    background: url(./rozey-1024x682.jpg);       
+    text-align: center;
+}
+
+.chinees {
+    grid-area: chinees;    
+    background:url(./yuan.jpg);
+    background-size: cover; 
+    background-position: center;    
+    text-align: center;
+    color: cyan;    
+}
+.reclame {
+    grid-area: reclame;
+    background:rgb(168, 165, 165);
+    text-align: center;
+}
+
+footer {
+    grid-area: footer;
+    background:rgb(195, 230, 195);
+    text-align: center;
+    }  
+
+@media screen and (max-width: 500px){
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 3fr 3fr 3fr 3fr 3fr 0.4fr 0.4fr;
+
+        grid-template-areas: 
+        "header"
+        "main"
+        "italiaans"
+        "nederlands"
+        "all-in"
+        "chinees"
+        "reclame"
+        "footer";
+
+    }
+    }

@@ -1,0 +1,15 @@
+body {
+    color: rgb(57, 24, 243);
+    background-color: rgb(132, 191, 240);
+
+}
+.solid-border {
+    border: 5px solid rgb(92, 29, 78);
+    margin: 10px;
+    padding: 10px;
+}
+.center-title {
+    color:rgb(177, 36, 36);
+    margin: 0 auto;
+    width: 500px;
+}
